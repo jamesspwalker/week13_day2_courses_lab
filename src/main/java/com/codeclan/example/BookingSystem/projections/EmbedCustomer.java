@@ -7,7 +7,7 @@ import org.springframework.data.rest.core.config.Projection;
 
 @Projection(name = "embedCustomer", types = Booking.class)
 public interface EmbedCustomer {
-    String getCustomerName();
+    String getDate();
     Customer getCustomer();
     Course getCourse();
 
