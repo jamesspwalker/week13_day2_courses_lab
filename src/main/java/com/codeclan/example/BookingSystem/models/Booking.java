@@ -50,4 +50,12 @@ public class Booking {
     public void setId(long id) {
         this.id = id;
     }
+
+    public Course getCourse() {
+        return course;
+    }
+
+    public Customer getCustomer() {
+        return customer;
+    }
 }
