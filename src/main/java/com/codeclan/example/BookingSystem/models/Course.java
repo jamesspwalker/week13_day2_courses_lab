@@ -13,15 +13,15 @@ public class Course {
 
     @Column
     private String courseName;
-    private String courseTime;
+    private String courseTown;
     private int rating;
 
     @OneToMany(mappedBy = "course", fetch = FetchType.LAZY)
     private List<Booking> bookings;
 
-    public Course( String courseName, String courseTime, int rating) {
+    public Course( String courseName, String courseTown, int rating) {
         this.courseName = courseName;
-        this.courseTime = courseTime;
+        this.courseTown = courseTown;
         this.rating = rating;
     }
 
@@ -36,12 +36,12 @@ public class Course {
         this.courseName = courseName;
     }
 
-    public String getCourseTime() {
-        return courseTime;
+    public String getCourseTown() {
+        return courseTown;
     }
 
-    public void setCourseTime(String courseTime) {
-        this.courseTime = courseTime;
+    public void setCourseTown(String courseTime) {
+        this.courseTown = courseTown;
     }
 
     public int getRating() {
